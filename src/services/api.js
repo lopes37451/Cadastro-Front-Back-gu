@@ -49,7 +49,7 @@ export async function login(email, senha) {
   // 1) DISPARA o pedido e ESPERA a resposta chegar.
   //    `await` = "segura aqui até voltar". Sem ele você recebe uma
   //    Promise (uma promessa), não os dados.
-  const resposta = await fetch(`${API_URL}/api/usuarios/login`, {
+  const resposta = await fetch(`${https://trab-guweb-mongodbatlas.vercel.app}/api/usuarios/login`, {
     // 2) O MÉTODO diz a INTENÇÃO do pedido:
     //    GET = ler | POST = criar | PUT = atualizar | DELETE = apagar
     method: "POST",
@@ -109,7 +109,7 @@ export async function login(email, senha) {
 //     Sua mensagem tem que aparecer em vermelho na tela.
 //
 export async function cadastrar(nome, email, senha) {
-  const resposta = await fetch(`${API_URL}/api/usuarios/cadastrar`, {
+  const resposta = await fetch(`${https://trab-guweb-mongodbatlas.vercel.app}/api/usuarios/cadastrar`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ nome, email, senha }),

@@ -157,7 +157,7 @@ export async function cadastrar(nome, email, senha) {
 //  🧪 Teste o erro: apague uma letra do token antes de mandar e veja o 401.
 //
 export async function listarUsuarios(token) {
-  const resposta = await fetch(`${https://mongodb-gu-ma6m.vercel.app}/api/usuarios`, {
+  const resposta = await fetch(`${https://trab-guweb-mongodbatlas.vercel.app}/api/usuarios`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 
